@@ -1,91 +1,213 @@
 <!DOCTYPE html>
-    <!-- Tells the robots what kind of file this is-->
 <html>
-    <!-- Tells the browser it is an html file-->
- 
 <head>
-    <!-- The meta-elements, information about the content, links to code and styling (CSS), etc. -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>sample</title>
+<style media="all" type="text/css">
     
-<meta charset="UTF-8">
-    <!-- Describes the character set to be used.  -->
-
-<title>My Exercises Page</title>
-      <!-- Describes the html page. Important for search engines, and for users (appears in the tab/title bar). Should also include the site name, as it becomes a bookmark or the name of the link in search results.  -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Raleway&display=swap" rel="stylesheet">
-    
-<style>
-    html {
-        font-size: 62.5%;
-    }
-    body {
-        font-size: 1.8rem;
-        font-family: 'Raleway', sans-serif;
-        background-color: darkblue;
-    }
+    html {font-size: 62.5%;}
     
     #container {
-        background-color: white;
-        padding: 50px;
-        width: 70%;
+        background: #fff;
         margin: 0 auto;
+        width: 90%;
+        border: 0px;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    header { 
+        background-color: #DAD7CD;
+        padding: 10px;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
     }
     
-    h1,h2,h3,h4,h5,h6 {
-        font-family: 'Lalezar', cursive;
+    #inside {
+        background-color: yellow;
     }
     
-    h1 {
-        font-size: 4rem;
+    #left {
+        background-color: #A3B18A;
+        padding: 1%;
+        float: left;
+        width: 18%;
         text-align: center;
     }
     
-    header a {
-        color: red;
+    #center {
+        padding: 1%;
+        background-color: #FFFFFF;
+        float: left;
+        width: 58%;
     }
     
-    #exercises a {
-        color: darkred;
+    #right {
+        background-color: #A3B18A;
+        padding: 1%;
+        float: left;
+        width: 18%;
     }
+    
+    footer {
+        background-color: azure;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        /* if you want sticky footer */
+        /* position: fixed; */ 
+        /* bottom: 0; */
+    }
+    
+    .floatleft {
+        float: left;
+        padding-right: 15px;
+    }
+    
+    .clearfix:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    nav {
+        background-color: #344E41;
+        padding-left: 20%;
+        padding-right: 20%;
+        align-content: center;
+    }
+    nav a{
+        text-decoration: none;
+    }
+    
+    nav ul {
+        margin: 0;
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    nav li {
+        float: left;
+        position: relative;
+        padding: 1rem;
+        width: 8rem;
+        text-align: center;
+    }
+    
+    nav li a {
+        color: #fff;
+        display: block;
+    }
+    
+    nav li:hover {
+        background-color: #A3B18A;
+    }
+    
+    nav ul li ul {
+        position: absolute;
+        left: 0;
+        display: none;
+        min-width: 8rem;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        background-color: #344E41; 
+    }
+    
+    nav ul li:hover > ul, ul li ul:hover {
+        visibility: visible;
+        display: block;
+    } 
+    
+    .avatar {
+        width: 100%;
+        border-radius: 50%;
+    }
+    
+    .icon {
+        width: 1.7rem;
+    }
+
+
 </style>
-    <!-- Where you would place your CSS rules for this HTML page.  -->
 </head>
 
-<body><!-- The content that appears in the browser window. If you want it to appear in the document, it must be within the body tag. -->
-
-<div id="container">    
-<header>
-<h1 title="Where I'm saving my coursework">My Exercises Page</h1><!-- Heading 1. A semantic tag that is the most important thing on the page. The top-level of your structure. -->
-
-<p style="text-align: center;"><a href="#bio">by Randy Trinh</a></p><!-- Defines a paragraph. Browsers automatically add some space  before and after a <p> element -->
-</header>
+<body>
+<div id="container">
     
-<div id="exercises">
-<h2>My Exercises</h2>
+    <header class="clearfix">
+        <img class="floatleft" src="images/logo.png" alt="generic logo with a circle">
+        <h1>Banner goes here</h1>
+    </header>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada bibendum arcu vitae elementum curabitur. Morbi tristique <a href="http://www.uwo.ca">Western University homepage.</a></p> 
-    
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie ac feugiat sed lectus. Leo integer malesuada nunc vel risus commodo. Eu ultrices vitae auctor eu. Rutrum quisque non tellus orci. Blandit cursus risus at ultrices mi tempus imperdiet. Consectetur adipiscing elit ut aliquam purus sit. Augue mauris augue neque gravida in. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Lacus laoreet non curabitur gravida. Ipsum faucibus vitae aliquet nec ullamcorper sit. Ac turpis egestas integer eget aliquet nibh. Nunc sed velit dignissim sodales ut eu sem. Risus ultricies tristique nulla aliquet enim tortor at. Natoque penatibus et magnis dis. Platea dictumst quisque sagittis purus sit amet volutpat. Luctus accumsan tortor posuere ac ut consequat. Ac feugiat sed lectus vestibulum mattis ullamcorper velit. Tempus quam pellentesque nec nam aliquam sem. Quis lectus nulla at volutpat diam ut.</p>
+    <nav class="clearfix">
+        <ul>
+            <li><a href="#">About the Designer</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Tutorials</a>
+                <ul>
+                    <li><a href="tutorial/1-sofar.html">Week 1</a></li>
+                    <li><a href="tutorial/2-floats-nav.html">Week 2</a></li>
+                    <li><a href="#">Week 3</a></li>
+                    <li><a href="#">Week 4</a></li>
+                    <li><a href="#">Week 5</a></li>
+                    <li><a href="#">Week 6</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Exercises</a>
+                <ul>
+                    <li><a href="index.html">Exercise 1</a></li>
+                    <li><a href="exercise-two.html">Exercise 2</a></li>
+                    <li><a href="#">Exercise 3</a></li>
+                    <li><a href="#">Exercise 4</a></li>
+                    <li><a href="#">Exercise 5</a></li>
+                    <li><a href="#">Exercise 6</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-<p>Cras semper auctor neque vitae tempus quam pellentesque nec nam. Sem viverra aliquet eget sit amet tellus cras adipiscing. Feugiat in fermentum posuere urna nec. Amet cursus sit amet dictum. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Adipiscing diam donec adipiscing tristique risus nec. Tincidunt ornare massa eget egestas purus viverra accumsan. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in. Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Fringilla urna porttitor rhoncus dolor purus non enim. In ornare quam viverra orci sagittis eu volutpat odio. Egestas congue quisque egestas diam. Id venenatis a condimentum vitae sapien. Suspendisse ultrices gravida dictum fusce ut.</p>
+<div id="inside">
+    <div id="left">
+        <h>Headline</h>
+        <div>
+            <p>
+                <img class="avatar" src="images/randy.png" alt="Caricature of designer">
+            </p>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
 
-<p>Elit pellentesque habitant morbi tristique senectus et netus et malesuada. Tortor dignissim convallis aenean et tortor. Duis tristique sollicitudin nibh sit amet. Vulputate eu scelerisque felis imperdiet. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Lobortis elementum nibh tellus molestie nunc non. Porttitor lacus luctus accumsan tortor posuere. Metus vulputate eu scelerisque felis. Erat nam at lectus urna duis. Mauris rhoncus aenean vel elit scelerisque mauris.</p>
-    
-<p>Augue neque gravida in fermentum. Rhoncus est pellentesque elit ullamcorper dignissim. Senectus et netus et malesuada fames ac turpis egestas. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Arcu non odio euismod lacinia at quis risus. Mauris pharetra et ultrices neque ornare. Id ornare arcu odio ut sem nulla pharetra. Id porta nibh venenatis cras sed felis eget velit. Convallis aenean et tortor at risus. Nunc mattis enim ut tellus elementum sagittis. Purus ut faucibus pulvinar elementum integer enim neque volutpat. At tempor commodo ullamcorper a lacus vestibulum. Viverra vitae congue eu consequat ac felis. Iaculis nunc sed augue lacus viverra vitae. Aliquam sem et tortor consequat id porta nibh. Imperdiet proin fermentum leo vel orci porta non. Interdum velit euismod in pellentesque massa placerat duis ultricies. Est sit amet facilisis magna etiam.</p>
-    
-<p>Scelerisque purus semper eget duis at tellus. Massa eget egestas purus viverra accumsan. Ac odio tempor orci dapibus ultrices in iaculis. </p>
+    <div id="center">
+
+        <h2>Dummy text</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+        <h2>Dummy text</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+
+    <div id="right">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+</div>    
 </div>
 
-<div id="bio">
-<h3>About Randy</h3>
-    
-<p>Quam pellentesque nec nam aliquam sem et. Risus quis varius quam quisque id. Eu tincidunt tortor aliquam nulla. Enim nulla aliquet porttitor lacus luctus accumsan tortor <a href="https://github.com/the-randolph">Github.</a></p>
+<div id="container">
+    <footer>
+        <p>
+            <a href="https://www.linkedin.com/in/trinhrandy/"><img class="icon" alt="linkedin" src="images/icons/linkedin-box-fill.png"></a>
+            <a href="https://www.instagram.com/the.randolph/"><img class="icon" alt="instagram" src="images/icons/instagram-line.png"></a>
+            <a href="https://www.facebook.com/trinhrandy"><img class="icon" alt="facebook" src="images/icons/facebook-box-fill.png"></a>
+        </p>
+    </footer>
 </div>
     
-<footer>
-<p>Last updated: January 13, 2021</p>
-</footer>
-</div>
 </body>
 </html>
