@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Responsive Starter</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+	/* This resets values so that the box model no longer applies */
+* {
+    box-sizing: border-box;
+}
+ /* General styles */
+    
+/* Container - set to relative positioning so that all other layout elements can be inside it */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+nav {
+    background-color: #344E41;
+    padding: 1%;
+    align-content: center;
+}
+
+/* Create three unequal columns that float next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    overflow: hidden;
+}
+    
+/* Left colum */
+.column.sideleft {
+    width: 20%
+}
+    
+/* Middle column */
+.column.middle {
+    width: 65%
+}
+    
+/* Right column */
+.column.sideright {
+    width: 15%
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+    
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on phones */
+    @media (max-width: 800px) {
+        .column.sideleft, .column.middle, .column.sideright {
+            width: 100%;
+        }
+        .column.sideleft, .column.sideright {
+            display: none;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .column.middle{
+            width: 100%;
+        }
+        button {
+            display:block;
+            width: 100%;
+        }
+    }
+
+</style>
+</head>
+<body>
+<div class="header">
+    <h2>Header</h2>
+</div>
+
+<nav>
+    <button><a href="#">About the Designer</a></button>
+    <button><a href="#">Portfolio</a></button>
+    <button><a href="#">Tutorials</a></button>
+    <button><a href="#">Exercises</a></button>
+    <button><a href="#">Contact</a></button>
+</nav>
+
+<div class="row">
+    <div class="column sideleft" style="background-color:#aaa;">
+        <p>Column 1</p>
+        <p>Designing a responsive page that scales for mobile, tablet, and computer screens.</p>
+        <p>Resize the browser window to see the responsive effect.</p>
+        <p>This is based on references from <a href="https://www.w3schools.com/w3css/w3css_responsive.asp">W3Schools.com</a></p>
+    </div>
+    <div class="column middle" style="background-color:#bbb;">
+        <h2>Exercise Three</h2>
+        <li>Webpage
+            <ul>All columns visible</ul>
+            <ul>Navigation buttons moderate length</ul>
+        </li>
+        <li>Tablet
+            <ul>Middle columns visible only</ul>
+        </li>
+        <li>Phone
+            <ul>Navigation buttons expanded to fill length</ul>
+        </li>
+    </div>
+    <div class="column sideright" style="background-color:#ccc;">Column 3</div>
+</div>
+
+<div class="footer">
+    <p>Footer</p>
+</div>
+    
+</body>
+</html>
