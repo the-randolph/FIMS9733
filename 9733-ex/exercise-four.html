@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Responsive Starter</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+	/* This resets values so that the box model no longer applies */
+* {
+    box-sizing: border-box;
+}
+ /* General styles */
+    
+/* Container - set to relative positioning so that all other layout elements can be inside it */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav { 
+	margin:0;
+	padding: 0;
+	background-color: #344E41;
+}
+
+#logo {
+	display: block;
+	padding: 0 30px;
+	float: left;
+	font-size:20px;
+	line-height: 60px;
+}
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+/* Positioning the navigation items */
+nav ul li {
+	margin: 0px;
+	float: left;
+	background-color: #344E41;
+	}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color:#fff;
+	font-size:17px;
+	text-decoration:none;
+}
+
+
+nav ul li ul li:hover { background: #A3B18A; }
+
+/* Background color change on Hover */
+nav a:hover { 
+	background-color: #A3B18A; 
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	/* has to be the same number as the "line-height" of "nav a", plus 5px to deal with overflow*/
+	top: 55px; 
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	left:170px; 
+}
+
+	
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+/* Create three unequal columns that float next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    overflow: hidden;
+}
+    
+/* Left colum */
+.column.sideleft {
+    width: 20%
+}
+    
+/* Middle column */
+.column.middle {
+    width: 65%
+}
+    
+/* Right column */
+.column.sideright {
+    width: 15%
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+    
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on phones */
+    @media (max-width: 800px) {
+        .column.sideleft, .column.middle, .column.sideright {
+            width: 100%;
+        }
+        .column.sideleft, .column.sideright {
+            display: none;
+        }
+    }
+    
+    @media all and (max-width : 500px) {
+
+	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	/* Styling the toggle lable */
+	.toggle {
+		display: block;
+		background-color: #344E41;
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+	}
+
+	.toggle:hover {
+		background-color: #A3B18A;
+	}
+
+	/* Display Dropdown when clicked on Parent Label */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #A3B18A;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #212121; 
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+    
+    .column.middle {
+        width: 100%;
+    }
+
+    button {
+        display:block;
+        width: 100%;
+    }
+    
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+    <h2>Header</h2>
+</div>
+
+<nav>
+    <div id="logo">Your Logo here</div>
+    <label for="drop" class="toggle">Menu</label>
+    <input type="checkbox" id="drop" />
+    <ul class="menu">
+        <li><a href="#">About the Designer</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li>
+            <label for="drop-1" class="toggle">Tutorials +</label>
+            <a href="#">Tutorials</a>
+            <input type="checkbox" id="drop-1">
+                <ul>
+                <li><a href="tutorial/1-sofar.html">Week 1</a></li>
+                <li><a href="tutorial/2-floats-nav.html">Week 2</a></li>
+                <li><a href="tutorial/3-10-responsive.html">Week 3</a></li>
+                <li>
+                    <label for="drop-3" class="toggle">Week 4 +</label>
+                    <a href="#">Week 4</a>         
+                    <input type="checkbox" id="drop-3">
+                    <ul>
+                        <li><a href="tutorial/4-dropdown-js.html">Javascript Menu</a></li>
+                        <li><a href="tutorial/4-responsive-css.html">CSS Menu</a></li>
+                    </ul>
+                <li><a href="#">Week 5</a></li>
+                <li><a href="#">Week 6</a></li>
+            </ul>
+        </li>
+        <li>
+            <label for="drop-1" class="toggle">Exercises +</label>
+            <a href="#">Exercises</a>
+            <input type="checkbox" id="drop-1">
+            <ul>
+                <li><a href="index.html">Exercise 1</a></li>
+                <li><a href="exercise-two.html">Exercise 2</a></li>
+                <li><a href="exercise-three.html">Exercise 3</a></li>
+                <li><a href="exercise-four.html">Exercise 4</a></li>
+                <li><a href="#">Exercise 5</a></li>
+                <li><a href="#">Exercise 6</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="row">
+    <div class="column sideleft" style="background-color:#aaa;">
+        <p>Column 1</p>
+        <p>Designing a responsive page that scales for mobile, tablet, and computer screens.</p>
+        <p>Resize the browser window to see the responsive effect.</p>
+        <p>This is based on references from <a href="https://www.w3schools.com/w3css/w3css_responsive.asp">W3Schools.com</a></p>
+    </div>
+    <div class="column middle" style="background-color:#bbb;">
+        <h2>Exercise Four</h2>
+        <li>Webpage
+            <ul>All columns visible</ul>
+            <ul>Navigation buttons moderate length</ul>
+        </li>
+        <li>Tablet
+            <ul>Middle columns visible only</ul>
+        </li>
+        <li>Phone
+            <ul>Navigation buttons expanded to fill length</ul>
+        </li>
+    </div>
+    <div class="column sideright" style="background-color:#ccc;">Column 3</div>
+</div>
+
+<div class="footer">
+    <p>Footer</p>
+</div>
+    
+</body>
+</html>
