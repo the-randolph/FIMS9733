@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&family=Raleway&display=swap');
+
+body {font-family: 'Raleway', sans-serif; font-size: 1.2rem; line-height: 1.4;}
+h1,h2,h3,h4,h5,h6 {font-family: 'Potta One', cursive;}
+h1 {font-size: 3rem;}
+
+.w3-dropdown-hover:hover .w3-dropdown-content .w3-dropdown-content {display:none}
+
+.w3-dropdown-hover:hover .w3-dropdown-hover:hover .w3-dropdown-content {display:inline;} .w3-button {text-align: center;}
+
+@media (max-width:600px) {
+.w3-bar-block .w3-dropdown-hover .w3-button,.w3-bar-block .w3-dropdown-click .w3-button{width:100%;text-align:center;padding:8px 16px}}
