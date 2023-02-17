@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Responsive Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	/* This resets values so that the box model no longer applies */
+* {
+    box-sizing: border-box;
+}
+    
+html {margin:0;padding:0;font-size:62.5%;}
+body {margin:0;font-family:Trebuchet, sans-serif;font-size: 1.7rem;background-image: url(../images/mountains.jpeg);background-size:cover;}
+    
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+    #container {
+        max-width: 980px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+/* Style the header */
+.header {
+    background-color: rgba(255,255,255,0.6);
+    padding: 30px;
+ 
+}
+
+    .header h1 {
+    padding-top: 100px;
+    padding-left: 250px;
+    font-size: 35px;
+    }
+/* Create three unequal columns that float next to each other */
+.column {
+    float: left;
+    padding: 10px;
+  
+}
+
+/* Left column */
+.column.sideleft {
+    width: 20%;
+    margin-bottom: -5000%;
+    padding-bottom: 5000%;
+}
+
+/* Middle column */
+.column.middle {
+    width: 65%;
+}
+/* Left column */
+.column.sideright {
+    width: 15%;
+      margin-bottom: -5000%;
+    padding-bottom: 5000%;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+    
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: rgba(255,255,255,0.6);
+    padding: 10px;
+    text-align: center;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+/*Menu here*/
+
+    nav {background-color: #444;padding-left:20%;
+    }
+/* Add a dark grey background color to the top navigation */
+.topnav {
+  overflow: hidden;
+   
+}
+
+/* Style the links inside the navigation bar */
+    
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1.4rem 1.6rem;
+  text-decoration: none;
+}
+
+/* Add an orange active class to highlight the current page */
+.active {
+  background-color: darkorange;
+  color: white;
+
+
+}
+    
+/* Hide the link that should open and close the topnav on small screens */
+    
+.topnav .icon {
+  display: none;
+}
+    
+/* Dropdown container - needed to position the dropdown content */
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+
+}
+/* Style the dropdown button to fit inside the topnav */
+
+.dropdown .dropbtn {
+ font-size: 1.7rem;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+    /* Style the dropdown content (hidden by default by display: none;) */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ddd;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+    
+/* Style the links inside the dropdown */
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 1.2rem 1.6rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .topnav a:focus, .dropdown:hover, .dropdown:focus, .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover, .dropdown-content a:focus {
+  background-color: orange;
+  color: black;
+}
+    
+    /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+        
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 500px) {
+    .column.sideleft, .column.middle, .column.sideright {
+        width: 100%;
+    }
+}
+    
+        
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+   
+
+@media screen and (max-width: 500px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+    nav {padding-left: 0%;}
+} /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+@media screen and (max-width: 500px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div id="container">
+<header>
+<div class="header"><a href="../index.html"> </a><img src="../images/logo.png" style="float:left;" width="200px" height="200px" alt="generic logo - link to home">
+  <h1>Header</h1>
+</div>
+</header>
+    
+<nav class="topnav" id="myTopnav" aria-label="Main Navigation">
+  <a href="#home" class="active" area-current="page ">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn" area-haspopup="true" aria-expanded="false"><a href="#">Dropdown +</a>
+         </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</nav>
+  
+
+<div class="row" style="background-color:#bbb;">
+    <aside>
+      <div class="column sideleft"  style="background-color:#ddd;">Something</div>
+    </aside>
+<main>
+  <div class="column middle" style="background-color:#bbb;"><article><h1>Accessibility Tutorial</h1>
+<p>By Buddy McCodeFace</p>
+<p>A page to help explain HTML5 semantic markup.</p>
+<section>
+      <h2>The Document Outline - Sectioning Tags</h2>
+<p>HTML5 has new “sectioning content” elements will have an impact on the document outline. These tags all have a structural meaning and are block elements by default.</p>
+
+<h3>Headers</h3>
+	<p>The <code>&lt;header&gt;</code> element is a sectioning tag. The W3C says: 
+<blockquote>"The &lt;header&gt; element specifies a header for a document or section." </blockquote>
+	It can be used for introductory content and you can technically use more than one, but most people tend to use it just for the banner/header info for the page.
+
+<h3>Footers</h3>
+<p>The <code>&lt;footer&gt;</code> element describes the information at the bottom of the page, and can include such things as: text-only nav, links to the sitemap and other utilities, authorship information, copyright information, back-to-top links, authorship dates, and so on.</p>
+
+
+<h3>Sections</h3>
+    <p>The W3C, describes the <code>&lt;section&gt;</code> tag as "a thematic grouping of content, typically with a heading."</p>
+
+<h3>Articles</h3>
+    <p>According to the W3C, the <code>&lt;article&gt;</code> tag "specifies independent, self-contained content." Essentially, this is any content that could be reused somewhere else. It could apply to a blog post, a magazine or news story, a forum post, etc.</p>
+<h3>Asides</h3>
+<p>The <code>&lt;aside&gt;</code> tag is for content that is apart from the main article, but related to it. For example, <q>a list of related links to the article that doesn't get included into the flow.</q>
+</p>
+<h3>Main</h3>
+<p>This is a unique tag, that can only be used one time on a page. It should describe the main content, and it can't be nested in any of the above tags. Note: don't use this for styling either.</p>
+	<blockquote>The content inside the <code>&lt;main&gt;</code> element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms. (<a href="https://www.w3schools.com/tags/tag_main.asp">W3CSchols</a>) </blockquote>
+</section>
+<section>
+	<h2>W3CSchools</h2>
+<p>You'll note I'm referring to them a lot. The W3C (world-wide web consortium) is the body that governs HTML5 standards, and their <a href="https://www.w3schools.com/html/default.asp" title="Check this out to get some additional definitions and tutorials">W3Cschool is a useful place</a> to play around with these tags and get definitions of the tags. </p>
+</section>
+      
+<section>
+<h2>Inline Semantic HTML</h2>
+<p>The <code>&lt;time&gt;</code> "tag defines a human-readable date/time" (<a href="https://www.w3schools.com/tags/tag_time.asp">W3CSchools</a>) but it’s not sectioning content.</p>
+<p>Another example would be the <code>&lt;mark&gt;</code> tag, which you can use if you want to highlight parts of your text.</p>
+</section>
+    
+<img src="../images/mountains.jpeg" width="100%" alt="lines of mountains fading into sunset - a contemplative and peaceful mood">
+      
+<br>
+<br>
+<img src="../images/emotions.jpeg" width="727px" height="472px" alt="Humorous Venn Diagram showing emotions: short term happiness, sudden rage, prolonged suffering" longdesc="venn.html"><br>
+      <a href="venn.html">Description of Venn Diagram</a>
+</article>	
+</div>
+</main>
+    
+  <aside><div class="column sideright" style="background-color:#ccc;"><h3>Lots of Lorem Ipsum</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+
+<p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. </p>
+
+<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna.</p> </div></aside>
+</div>
+</div>
+
+<footer class="footer">
+    <nav aria-label="Footer Navigation"><p>Home | News | Contact | Dropdown | About</p></nav>
+ 	<p>Writen by Buddy McCodeFace, on September 3, 2018. </p>
+	<p>Contact Buddy via email.</p>
+	<p>&copy;2018 McCodeFace Enterprises</p>
+
+    	<p>This is based on a <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_template2_float">design provided by W3Schools.com</a></p>
+</footer>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>

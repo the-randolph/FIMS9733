@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html id="top" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Responsive Starter</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,7 @@
 </head>
 <body>
     
-<div class="w3-content">
+<div class="w3-container">
  <div class="w3-bar w3-black">
     <a href="#" class="w3-bar-item w3-button w3-mobile">About the Designer</a>
     <a href="#" class="w3-bar-item w3-button w3-mobile">Portfolio</a>
@@ -45,8 +45,12 @@
     <a href="#" class="w3-bar-item w3-button w3-mobile">Contact</a>
   </div>
     <header>
-    <h1>This is our starting point.</h1>
+    <div class="center">
+        <img src="images/logo.png">
+        <h1>This is our starting point.</h1>
+    </div>
     </header>
+        
     <div class="w3-row w3-indigo">
         
         <div class="w3-quarter w3-padding"> 
@@ -54,25 +58,49 @@
         </div>
 
         <div class="w3-half w3-sand w3-padding">
+        <div>
+            <p>
+            <h1>To do</h1>
+            <li>the colors</li>
+            <li><s>the navigation</s></li>
+            <li><s>the layout</s></li>
+            <li><s>the typography</s></li>
+            <li><s>include a header with a logo and tagline (this can be generic if you want, or you can find a fun sample/fake logo and use that as your basis</s></li>
+            <li><s>include a footer too, with a redundant text-only nav and a back-to-top link that works.</s></li>
+        </p>
         <p>Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum. Risus feugiat in ante metus dictum at tempor. Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum. In massa tempor nec feugiat nisl pretium. Purus faucibus ornare suspendisse sed. At consectetur lorem donec massa.</p>
         <p>Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum. Risus feugiat in ante metus dictum at tempor. Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum. In massa tempor nec feugiat nisl pretium. Purus faucibus ornare suspendisse sed. At consectetur lorem donec massa.</p>
         <p>Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum. Risus feugiat in ante metus dictum at tempor. Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum. In massa tempor nec feugiat nisl pretium. Purus faucibus ornare suspendisse sed. At consectetur lorem donec massa.</p>
+        </div>
+        <div class="w3-half w3-padding">
+            <h1>News Heading</h1>
+            <p>Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum. Risus feugiat in ante metus dictum at tempor. Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum. In massa tempor nec feugiat nisl pretium. Purus faucibus ornare suspendisse sed. At consectetur lorem donec massa.</p>
+        </div>
+        <div class="w3-half w3-padding">
+            <h1>News Heading 2</h1>
+            <p>Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum. Risus feugiat in ante metus dictum at tempor. Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum. In massa tempor nec feugiat nisl pretium. Purus faucibus ornare suspendisse sed. At consectetur lorem donec massa.</p>
+        </div>
         </div>
         <div class="w3-quarter w3-padding"> 
         <p>Porttitor lacus luctus accumsan tortor posuere. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Platea dictumst quisque sagittis purus sit amet volutpat. Aliquet porttitor lacus luctus accumsan. Mollis aliquam ut porttitor leo a diam sollicitudin tempor.</p>
         </div>
     </div>
-    <footer>Footer here</footer>
-</div>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("Demo");
-  if (x.className.indexOf("w3-show") == -1) { 
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
+    <footer>
+        <div class="w3-cell-row">
+            <div class="w3-quarter left">
+                <a href="https://www.linkedin.com/in/trinhrandy/"><img class="icon" alt="linkedin" src="images/icons/linkedin-box-fill.png"></a>
+                <a href="https://www.instagram.com/the.randolph/"><img class="icon" alt="instagram" src="images/icons/instagram-line.png"></a>
+                <a href="https://www.facebook.com/trinhrandy"><img class="icon" alt="facebook" src="images/icons/facebook-box-fill.png"></a>
+            </div>
+            <div class="w3-half center">
+                <a href="index.html">Home</a>
+                <a href="#">About The Designer</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="w3-quarter right">
+                <a href="#top">Return to Top</a>
+            </div>
+        </div>
+    </footer>
 </body></html>
