@@ -5,6 +5,12 @@ body {font-family: 'DM Sans', sans-serif; font-size: 1.2rem; line-height: 1.4;}
 h1,h2,h3,h4,h5,h6 {font-family: 'DM Serif Display', serif;}
 h1 {font-size: 3rem;}
 
+.primary,.primary:hover{color:#fff!important;background-color:#6c584c!important}
+
+.secondary,.secondary:hover{color:#fff!important;background-color:#a98467!important}
+
+.tertiary,.tertiary:hover{color:#000!important;background-color:#f0ead2!important}
+
 .w3-dropdown-hover:hover .w3-dropdown-content .w3-dropdown-content {display:none}
 
 .w3-dropdown-hover:hover .w3-dropdown-hover:hover .w3-dropdown-content {display:inline;} .w3-button {text-align: center;}
