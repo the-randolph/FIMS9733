@@ -23,12 +23,16 @@
         padding-bottom: 0.5%;
     }
     
+    .banner {
+        background-image:url(images/banner.jpg)
+    }
+    
     #inside {
-        background-color: yellow;
+        background-color: #CAF0F8;
     }
     
     #left {
-        background-color: orange;
+        background-color: #CAF0F8;
         padding: 1%;
         float: left;
         width: 18%;
@@ -43,7 +47,7 @@
     }
     
     #right {
-        background-color: blueviolet;
+        background-color: #CAF0F8;
         padding: 1%;
         float: left;
         width: 18%;
@@ -69,7 +73,7 @@
     }
     
     nav {
-        background-color: aliceblue;
+        background-color: #023E8A;
         padding: 5px;
     }
     nav a{
@@ -87,7 +91,7 @@
         position: relative;
         padding: 1rem;
         width: 8rem;
-        background-color: #222;
+        background-color: #023E8A;
         margin-right: 1rem;
     }
     
@@ -96,7 +100,7 @@
     }
     
     nav li:hover {
-        background-color: darkorange;
+        background-color: #023E8A;
     }
     
     nav ul li ul {
@@ -119,14 +123,13 @@
 <body>
 <div id="container">
     
-    <header class="clearfix">
-        <img class="floatleft" src="images/logo.png" alt="generic logo with a circle">
-        <h1>Banner goes here</h1>
+    <header class="clearfix banner">
+        <img class="floatleft" src="images/logo-2.png" alt="generic logo with a circle">
     </header>
 
     <nav class="clearfix">
         <ul>
-            <li><a href="#">About the Designer</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Services</a>
                 <ul>
@@ -148,13 +151,16 @@
 
 <div id="inside">
     <div id="left">
-        left sidebar goes here dolor sit amet 
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
     </div>
 
     <div id="center">
-        <h2>Dummy text</h2>
+        <h1>Exercise Summary:</h1>
+    <p>This week's exercise consists of creating a three-column layout with only left floats that scale.</p>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        
+        <h2>Dummy text</h2>
 
         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 
@@ -166,12 +172,14 @@
     </div>
 
     <div id="right">
-        right sidebar goes here dolor sit amet
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
     </div>
 </div>
 </div>
 <div id="container">
-<footer>footer goes here</footer>
+<footer><a href="https://www.linkedin.com/in/trinhrandy/"><img class="icon" alt="linkedin" src="images/icons/linkedin-box-fill.png"></a>
+                <a href="https://www.instagram.com/the.randolph/"><img class="icon" alt="instagram" src="images/icons/instagram-line.png"></a>
+                <a href="https://www.facebook.com/trinhrandy"><img class="icon" alt="facebook" src="images/icons/facebook-box-fill.png"></a></footer>
 </div>
 </body>
 </html>

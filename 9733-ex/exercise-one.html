@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>sample</title>
+<style media="all" type="text/css">
+    
+    html {font-size: 62.5%;}
+    
+    #container {
+        background: #fff;
+        margin: 0 auto;
+        width: 90%;
+        border: 0px;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    header { 
+        background-color: #DAD7CD;
+        padding: 10px;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+    }
+    
+    #inside {
+        background-color: #A3B18A;
+        overflow: hidden;
+    }
+    
+    #left {
+        background-color: #A3B18A;
+        padding: 1%;
+        float: left;
+        width: 18%;
+        text-align: center;
+    }
+    
+    #center {
+        padding: 1%;
+        background-color: #FFFFFF;
+        float: left;
+        width: 58%;
+    }
+    
+    #right {
+        background-color: #A3B18A;
+        padding: 1%;
+        float: left;
+        width: 18%;
+    }
+    
+    footer {
+        background-color: #FFFFFF;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        /* if you want sticky footer */
+        /* position: fixed; */ 
+        /* bottom: 0; */
+    }
+    
+    .floatleft {
+        float: left;
+        padding-right: 15px;
+    }
+    
+    .clearfix:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    nav {
+        background-color: #344E41;
+        padding-left: 20%;
+        padding-right: 20%;
+        align-content: center;
+    }
+    nav a{
+        text-decoration: none;
+    }
+    
+    nav ul {
+        margin: 0;
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    nav li {
+        float: left;
+        position: relative;
+        padding: 1rem;
+        width: 8rem;
+        text-align: center;
+    }
+    
+    nav li a {
+        color: #fff;
+        display: block;
+    }
+    
+    nav li:hover {
+        background-color: #A3B18A;
+    }
+    
+    nav ul li ul {
+        position: absolute;
+        left: 0;
+        display: none;
+        min-width: 8rem;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        background-color: #344E41; 
+    }
+    
+    nav ul li:hover > ul, ul li ul:hover {
+        visibility: visible;
+        display: block;
+    } 
+    
+    .avatar {
+        max-width: 100%;
+        border-radius: 50%;
+    }
+    
+    .icon {
+        width: 1.7rem;
+    }
+
+
+</style>
+</head>
+
+<body>
+<div id="container">
+    
+    <header class="clearfix">
+        <img class="floatleft" src="images/logo.png" alt="generic logo with a circle">
+        <h1>Banner goes here</h1>
+    </header>
+
+    <nav class="clearfix">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Tutorials</a>
+                <ul>
+                    <li><a href="tutorial/1-sofar.html">Week 1</a></li>
+                    <li><a href="tutorial/2-floats-nav.html">Week 2</a></li>
+                    <li><a href="tutorial/3-10-responsive.html">Week 3</a></li>
+                    <li><a href="tutorial/4-responsive-css.html">Week 4</a></li>
+                    <li><a href="tutorial/5-responsive-w3.html">Week 5</a></li>
+                    <li><a href="tutorial/6-accessibility.html">Week 6</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Exercises</a>
+                <ul>
+                    <li><a href="exercise-one.html">Exercise 1</a></li>
+                    <li><a href="exercise-two.html">Exercise 2</a></li>
+                    <li><a href="exercise-three.html">Exercise 3</a></li>
+                    <li><a href="exercise-four.html">Exercise 4</a></li>
+                    <li><a href="exercise-five.html">Exercise 5</a></li>
+                    <li><a href="exercise-six.html">Exercise 6</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+<div id="inside">
+    <div id="left">
+        <h>Headline</h>
+        <div>
+            <p>
+                <img class="avatar" src="images/randy.png" alt="Caricature of designer">
+            </p>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+
+    <div id="center">
+        <h1>Exercise Sumary:</h1>
+        <p>This week's exerise consists of starting to build a home page for the exercises (index.html) but I am still casually customizing it and as such have directed it to <code>exercise-one.html</code>.</p>
+        
+        <h2>Dummy text</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+        <h2>Dummy text</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+
+    <div id="right">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+</div>    
+</div>
+
+<div id="container">
+    <footer>
+        <p>
+            <a href="https://www.linkedin.com/in/trinhrandy/"><img class="icon" alt="linkedin" src="images/icons/linkedin-box-fill.png"></a>
+            <a href="https://www.instagram.com/the.randolph/"><img class="icon" alt="instagram" src="images/icons/instagram-line.png"></a>
+            <a href="https://www.facebook.com/trinhrandy"><img class="icon" alt="facebook" src="images/icons/facebook-box-fill.png"></a>
+        </p>
+    </footer>
+</div>
+    
+</body>
+</html>
