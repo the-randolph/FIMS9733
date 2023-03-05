@@ -25,7 +25,20 @@
                 </nav>
             </div>
             <div class="w3-main">
-                <p>Style Guide</p>
+                <div class="w3-padding">
+                    <button onclick="functionExpand('fonts')" class="w3-btn w3-block w3-black w3-left-align"><h2>Fonts ▼</h2></button>
+                    <div id="fonts" class="w3-container w3-hide">   
+                        <div style="font-family: 'Angella White Personal use font', sans-serif; font-size: 4rem">
+                            <p>Angella White</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-padding">
+                    <button onclick="functionExpand('colours')" class="w3-btn w3-block w3-black w3-left-align"><h2>Colours ▼</h2></button>
+                    <div id="colours" class="w3-container w3-hide">   
+                        <img src="images/palette.png" width="100%">
+                    </div>
+                </div>
             </div>
             <div>
                 <footer>
@@ -36,6 +49,16 @@
                     </p>
                 </footer>
             </div>
-        </div>
+        </div>     
+    <script>
+        function functionExpand(id) {
+          var x = document.getElementById(id);
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+</script>
     </body>
 </html>
