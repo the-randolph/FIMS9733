@@ -79,24 +79,10 @@ nav {
     .menu-display {
         display: none;
     }
-    .desktop-nav {
-        display: block;
-    }
-    .mobile-nav {
-        display: none;
-    }
 }
 
 @media (max-width: 600px) {
     .menu-display {
-        display: block;
-    }
-    
-    .desktop-nav {
-        display: none;
-    }
-    
-    .mobile-nav {
         display: block;
     }
     

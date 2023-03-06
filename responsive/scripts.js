@@ -13,6 +13,12 @@ style = getComputedStyle(elem);
 
 var flag = 0;
 
+function collapseNav() {
+    if(style.display === "block") {
+            displayLink.style.display = "none";
+    }
+}
+
 function stickyNav() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky");
