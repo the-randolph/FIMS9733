@@ -62,7 +62,7 @@ nav {
     background-image: url(./images/flowerfield.jpg)
 }
 
-box-white {
+.box-white {
     background-color: white;
     border-color: white;
 }
