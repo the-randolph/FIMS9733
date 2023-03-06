@@ -1,34 +1,25 @@
-window.onscroll = function() {stickyNav()};
+window.onscroll = function() {
+    stickyNav();
+};
 
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 var displayLink = document.getElementById("displayLink");
+var menuDisplay = document.getElementById("hamburger");
+var elem, style;
+
+elem = document.querySelector('.menu-display');
+style = getComputedStyle(elem);
 
 var flag = 0;
 
 function stickyNav() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky");
-    } 
-    else {
-        navbar.classList.remove("sticky");
-    }
-}
-
-function stickyNavMobile() {
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky");
-        displayLink.style.display = "none";
-    } 
-    else {
-        navbar.classList.remove("sticky");
-    }
-}
-
-function stickyNavDesktop() {
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky");
-        displayLink.style.display = "none";
+        if(style.display === "block") {
+            displayLink.style.display = "none";
+        }
+        //console.log(style.display);
     } 
     else {
         navbar.classList.remove("sticky");

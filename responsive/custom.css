@@ -79,12 +79,10 @@ nav {
     .menu-display {
         display: none;
     }
-    
-    desktop-nav {
+    .desktop-nav {
         display: block;
     }
-    
-    mobile-nav {
+    .mobile-nav {
         display: none;
     }
 }
@@ -94,19 +92,19 @@ nav {
         display: block;
     }
     
+    .desktop-nav {
+        display: none;
+    }
+    
+    .mobile-nav {
+        display: block;
+    }
+    
     .footer-left {
         text-align: center;
     }
     
     .footer-right {
         text-align: center;
-    }
-    
-    desktop-nav {
-        display: none;
-    }
-    
-    mobile-nav {
-        display: block;
     }
 }
