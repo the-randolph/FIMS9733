@@ -79,6 +79,14 @@ nav {
     .menu-display {
         display: none;
     }
+    
+    desktop-nav {
+        display: block;
+    }
+    
+    mobile-nav {
+        display: none;
+    }
 }
 
 @media (max-width: 600px) {
@@ -92,5 +100,13 @@ nav {
     
     .footer-right {
         text-align: center;
+    }
+    
+    desktop-nav {
+        display: none;
+    }
+    
+    mobile-nav {
+        display: block;
     }
 }
