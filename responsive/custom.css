@@ -5,6 +5,13 @@ body {
     font-family: 'EB Garamond', 'PT Serif', serif;
 }
 
+.vertical-align {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Libre Baskerville', serif;
 }
@@ -25,8 +32,37 @@ nav {
     text-transform: uppercase;
 }
 
-test {
-    height: 100%;
-    background-color: blue;
-    color: aqua;
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+@media all and (min-width : 601px) {
+    .menu-display {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-display {
+        display: block;
+    }
+}
+
+.flowerbanner {
+    background-image: url(./images/flowerfield.jpg)
+}
+
+box-white {
+    background-color: white;
+    border-color: white;
 }

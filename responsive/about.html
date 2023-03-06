@@ -7,31 +7,52 @@
 
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="custom.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
-        <div class="w3-container w3-mobile">
+        <div class="w3-mobile">
             <header class="center w3-padding">
                 Randy Trinh
             </header>
-            <div class="w3-bar primary w3-large">
-                <nav class="w3-bar w3-black">
-                    <a href="./index.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-text-grey w3-hover-text-white w3-" style="width:16%">Home</a>
-                    <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-text-white w3-hover-text-white" style="width:16%">About</a>
-                    <a href="./resume.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-text-grey w3-hover-text-white" style="width:16%">Resume</a>
-                    <a href="./style-guide.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-text-grey w3-hover-text-white" style="width:16%">Style Guide</a>
-                    <a href="./resources.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-text-grey w3-hover-text-white" style="width:16%">Resources</a>
-                    <a href="./contact.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-text-grey w3-hover-text-white" style="width:16%">Contact</a>
-                </nav>
-            </div>
-            <div class="w3-main">
-                <div class="w3-row-padding w3-padding-16 w3-center">
-                    <div class="w3-half">
-                        <div>
-                            <img src="images/randy.png" style="width:50%">
-                        </div>                  
+            <div id="navbar" class="w3-bar primary w3-large">
+                <div id="myLinks">
+                    <nav class="w3-bar w3-black topnav container w3-center">
+                        <div id="displayLink">
+                            <div class="w3-button w3-mobile">
+                                <a href="./index.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-text-grey w3-hover-text-white">Home</a>
+                            </div>
+                            <div class="w3-button w3-mobile">
+                                <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-text-white w3-hover-text-white">About</a>
+                            </div>
+                            <div class="w3-button w3-mobile">
+                                <a href="./resume.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-text-grey w3-hover-text-white">Resume</a>
+                            </div>
+                            <div class="w3-button w3-mobile">
+                                <a href="./style-guide.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-text-grey w3-hover-text-white">Style Guide</a>
+                            </div>
+                            <div class="w3-button w3-mobile">
+                                <a href="./resources.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-text-grey w3-hover-text-white">Resources</a>
+                            </div>
+                            <div class="w3-button w3-mobile">
+                                <a href="./contact.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-text-grey w3-hover-text-white">Contact</a>
+                            </div>
+                        </div>
+                        <div id="hamburger" class="w3-button w3-mobile w3-center menu-display">
+                            <a href="javascript:void(0);" class="icon w3-button w3-mobile" onclick="myMenu()" style="width:10%">
+                                <i class="fa fa-bars"></i>
+                            </a>
                     </div>
-                    <div class="w3-container w3-half w3-center w3-cell-middle test">
+                    </nav>
+                </div>
+            </div>
+            <div class="w3-container w3-row-padding w3-padding-16 w3-center">
+                <div class="w3-main vertical-align">
+                    <div class="w3-half" style="margin: auto;">
+                        <img src="images/randy.png" width="100%">
+                    </div>
+                    <div class="w3-half">
+                        <h1>About Me</h1>
                         <p>
                             With the firm belief that information is an asset especially when organized and managed, I am currently pursuing my Master of Library and Information Science (MLIS) degree at the University of Western Ontario. I’ve always been passionate about working in teams and utilizing 
                         </p>
@@ -41,15 +62,16 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <footer>
-                    <p>
-                        <a href="https://www.linkedin.com/in/trinhrandy/"><img class="icon" alt="linkedin" src="images/icons/linkedin-box-fill.png"></a>
-                        <a href="https://www.instagram.com/the.randolph/"><img class="icon" alt="instagram" src="images/icons/instagram-line.png"></a>
-                        <a href="https://www.facebook.com/trinhrandy"><img class="icon" alt="facebook" src="images/icons/facebook-box-fill.png"></a>
-                    </p>
-                </footer>
+            <div class="w3-container">
+                    <footer>
+                        <p>
+                            <a href="https://www.linkedin.com/in/trinhrandy/"><img class="icon" alt="linkedin" src="images/icons/linkedin-box-fill.png"></a>
+                            <a href="https://www.instagram.com/the.randolph/"><img class="icon" alt="instagram" src="images/icons/instagram-line.png"></a>
+                            <a href="https://www.facebook.com/trinhrandy"><img class="icon" alt="facebook" src="images/icons/facebook-box-fill.png"></a>
+                        </p>
+                    </footer>
             </div>
         </div>
     </body>
+    <script src="/scripts.js"></script>
 </html>
