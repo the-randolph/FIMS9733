@@ -27,8 +27,9 @@ header {
     font-size: 200px;
 }
 
-header .img {
-    width: 100%;
+.img-logo {
+    max-width: 100%;
+    height: auto;
 }
 
 nav {
