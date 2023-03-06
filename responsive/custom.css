@@ -27,6 +27,10 @@ header {
     font-size: 200px;
 }
 
+header .img {
+    width: 100%;
+}
+
 nav {
     font-family: 'Crimson Pro', serif;
     text-transform: uppercase;
