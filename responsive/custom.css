@@ -1,6 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/angella-white-personal-use-font');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=EB+Garamond&family=Libre+Baskerville&family=Libre+Caslon+Text&family=PT+Serif&display=swap');
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-family: 'EB Garamond', 'PT Serif', serif;
 }
@@ -51,6 +55,25 @@ nav {
   display: none;
 }
 
+.footer-left {
+        text-align: left;
+    }
+    
+.footer-right {
+        text-align: right;
+    }
+
+.flowerbanner {
+    background-image: url(./images/flowerfield.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.box-white {
+    background-color: white;
+    border-color: white;
+}
+
 @media all and (min-width : 601px) {
     .menu-display {
         display: none;
@@ -61,13 +84,12 @@ nav {
     .menu-display {
         display: block;
     }
-}
-
-.flowerbanner {
-    background-image: url(./images/flowerfield.jpg)
-}
-
-.box-white {
-    background-color: white;
-    border-color: white;
+    
+    .footer-left {
+        text-align: center;
+    }
+    
+    .footer-right {
+        text-align: center;
+    }
 }
